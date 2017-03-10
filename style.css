@@ -1,0 +1,9 @@
+.bookSummary{
+	overflow: hidden;
+	height: 13em;
+	text-overflow: ellipsis;
+}
+.flex-box{display: inline-flex;}
+.flex-box img{height: 55em;width: 30%}
+.jumbotron{width: 60%;height: 55em;overflow: hidden;text-overflow: ellipsis;}
+.btn-danger{margin-left: 80%;}
