@@ -80,10 +80,10 @@ var Home = React.createClass({
 		      <h1 className="well text-center">青春小说</h1>
 		        {lst}
 		       
-		        <NavLink to="/list/qc?_k=244436" type="button" className="btn btn-danger">查看列表</NavLink>
+		        <NavLink to="/list/qc" type="button" className="btn btn-danger">查看列表</NavLink>
 		         <h1 className="well text-center">科幻小说</h1>
 		        {lst2}
-		        <NavLink to="/list/kh?_k=g16ese" type="button" className="btn btn-danger">查看列表</NavLink>
+		        <NavLink to="/list/kh" type="button" className="btn btn-danger">查看列表</NavLink>
 		      </div>
 			</div>
 		)

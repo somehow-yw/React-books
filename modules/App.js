@@ -15,13 +15,13 @@ var App = React.createClass({
 				                <span className="icon-bar"></span>
 				                <span className="icon-bar"></span>
 				              </button>
-				              <a className="navbar-brand" href="#">Project name</a>
+				              <a className="navbar-brand" href="#">歪猴图书馆</a>
 				            </div>
 				            <div id="navbar" className="navbar-collapse collapse">
 				              <ul className="nav navbar-nav">
 				                <li><IndexLink to="/">主页</IndexLink></li>
-				                <li><NavLink to="/about">登陆</NavLink></li>
-				                <li><NavLink to="/list">注册</NavLink></li>
+				                <li><NavLink to="/login">登陆</NavLink></li>
+				                <li><NavLink to="/register">注册</NavLink></li>
 				                <li className="dropdown">
 				                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">作品分类<span className="caret"></span></a>
 				                  <ul className="dropdown-menu">
