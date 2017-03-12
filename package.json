@@ -23,7 +23,7 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.26.4",
     "http-server": "^0.8.5",
-    "json-server": "^0.9.5",
+    "json-server": "^0.9.6",
     "style-loader": "^0.13.2",
     "webpack": "^1.12.13",
     "webpack-dev-middleware": "^1.10.1",

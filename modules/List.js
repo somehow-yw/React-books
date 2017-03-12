@@ -1,8 +1,5 @@
 var React = require('react');
-var NavLink = require('./NavLink');
-var listUrl = window.location.hash;
-var listUrlName=listUrl.slice(7,9);
-console.log(listUrlName);
+var NavLink = require('./NavLink'); 
 var List = React.createClass({
 	getDefaultProps:function(){
 		return {
@@ -31,7 +28,7 @@ var List = React.createClass({
 		})
 	},
 	render:function(){
-		if(listUrlName=="qc"){
+		if(this.props.params.type==="qc"){
 		if(this.state.list.length>0){
 			var lst = [];
 			var data = this.state.list;
@@ -55,11 +52,10 @@ var List = React.createClass({
 			}
 		}
 	}	;
-	if(listUrlName=="kh"){
+	if(this.props.params.type=== "kh"){
 		if(this.state.list2.length>0){
 			var lst2 = [];
 			var data2 = this.state.list2;
-			console.log(data2);
 			var listLen2 = data2.length;
 			for(var i =0;i<listLen2;i++){
 				var detailUrl2 = "/detail/" + data2[i].id;

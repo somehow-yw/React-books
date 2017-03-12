@@ -35,6 +35,7 @@ var Detail = React.createClass({
 			for(var j=0;j<bookslen;j++){
 				if(books[j].id==thisbookid){
 					return (
+					<div>
 						<div className="flex-box">
 							<img  src={books[j].images.large} />
 							<div className="jumbotron disline"  keys={books[j].id}>
@@ -43,6 +44,12 @@ var Detail = React.createClass({
 							<p><a className="btn btn-primary btn-lg" href={books[j].url} role="button">阅读原文</a></p>
 							</div>
 						</div>
+						<h1 className="well text-center">叽叽喳喳的评论</h1>
+						
+							<textarea className="pl"></textarea>
+							<button className="btn btn-block btn-lg btn-success">发布</button>
+						
+					</div>
 							)
 				}
 			}
