@@ -1,10 +1,21 @@
 var React = require('react');
 
 var Register = React.createClass({
+	handlerClick:function(){
+		var uname=$("#inputEmail").val();
+		var upsd=$("#inputPassword").val();
+		var user={
+			"username":"",
+			"password":""
+		};
+		 var userlist= localStorage.userlist ==undefined ? [] : JSON.parse(localStorage.userlist);
+		console.log(userlist);
+		user.username=uname;
+		user.password=upsd;
+		userlist.push(user)
+		localStorage.userlist=JSON.stringify(userlist)
+	},
 	render:function(){
-		var username=$("#inputEmail").value;
-		var password=$("#inputPassword").value;
-		console.log(username,password);
 		return (
 			<div className="container">
 		      <form classNameclassName="form-signin">
@@ -16,7 +27,7 @@ var Register = React.createClass({
 		        <div className="checkbox">
 		          <label><input type="checkbox" value="remember-me"/>记住我</label>
 		        </div>
-		        <button className="btn btn-lg btn-primary btn-block" type="submit" >注册</button>
+		        <button className="btn btn-lg btn-primary btn-block" type="submit" onClick={this.handlerClick}>注册</button>
 		      </form>
     </div>
 		)
