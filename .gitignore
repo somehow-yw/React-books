@@ -1,5 +1,6 @@
 # Windows image file caches
 Thumbs.db
+node_modules/
 ehthumbs.db
 
 # Folder config file
